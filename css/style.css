@@ -1,0 +1,390 @@
+html,body{
+	margin:0px;
+	padding: 0px;
+	font-size: 0px;
+	 
+
+}
+
+
+body{
+	background-color: #1C1C1C;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+
+
+.navigation{
+	background-color: #1C1C1C;
+	color:#0dd4d6;
+	height: 50px;
+
+	animation-name: navegacao;
+	animation-duration: 4s;
+
+}
+
+
+
+.navigation ul{
+	margin-top: 0;
+	list-style: none;
+	padding-left: 0;
+	text-align: right;
+	height: 50px;
+
+
+}
+.navigation li{
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 50px;
+	font-size: 16px;
+
+
+	
+}
+	
+
+.navigation a {
+	color: #0dd4d6;
+	text-decoration: none;
+
+}
+
+.navigation a:hover{
+	color: #31edef;
+}
+
+.capa{
+	color: white;
+}
+
+.capa span{
+	color: #0dd4d6;
+	margin-left: -3px;
+}
+
+.capa div{
+	display: inline-block;
+	height: 650px;
+}
+
+.profile-pic{
+	width: 40%;
+	text-align: center;
+
+	animation-name: profile-capa;
+	animation-duration: 2s;
+}
+.profile-pic img{
+	border-radius: 154px;	
+	width: 300px;
+	text-align: center;
+	margin-top: 100px;
+}
+.profile-title{
+	
+	vertical-align: top;
+	width: 60%;
+
+
+	animation-name: titulo-capa;
+	animation-duration: 2s;
+}
+
+.profile-title h1{
+	font-size: 58px;
+	margin-top: 250px;
+
+}
+.profile-title h2{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 100;
+	margin-top:-45px;
+}
+
+
+.main {
+	padding: 80px 180px 70px 100px;
+
+	animation-name: conteudo;
+	animation-duration: 2s;
+
+}
+
+.main img{
+
+    float: left;
+    margin-right: 9px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+
+}
+.main h1{
+	color: white;
+	font-weight:normal;
+	font-size: 30px;
+
+}
+.main h2{
+	color: #0dd4d6;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.main h3{
+	color: #0dd4d6;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.main p{
+	font-size: 14px;
+	font-weight: 100;
+	color: white;
+	line-height: 20px;
+	text-align: justify;
+	margin-top: -10px;
+
+}
+.main a{
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+}
+.main hr{
+	width: 100%;
+}
+
+.caminho {
+	list-style: none;
+	padding-left: 0;
+	color: gray;
+
+}
+
+.caminho li{
+	display: inline-block;
+	font-size: 14px;
+}
+
+
+.caminho a{
+	color: gray;
+}
+.social-img{
+	width: 40px;
+	padding: 0px;
+
+}
+
+.miniatura {
+	width: 320px;
+	height: 320px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.miniatura a{
+	text-decoration: none;
+}
+.blackbox{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	padding-top: 120px;
+	transition: 1s;
+
+}
+
+.blackbox:hover {
+	opacity: 0.9;
+	transition: 1s;
+}
+
+.navigation li.threeline-icon{
+	display: none;
+}
+
+.blackbox{
+	text-align: center;
+
+}
+.blackbox-text h1{
+	color: #0dd4d6;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 0px;
+}
+
+.blackbox-text h2{
+	color: white;
+	font-size: 14px;
+	text-transform: none;
+
+}
+
+.foto-trabalho{
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.back-link {
+	    color: #0dd4d6;
+	    margin-top: 28px;
+	    font-size: 12px;
+	    margin-left: 97px;
+
+}
+
+
+/*ANIMAÇÕES*/
+
+@keyframes profile-capa{
+0% {opacity: 0; transform:translate(0px, 20px)}
+100% {opacity: 1; transform:( 0px, 0px)}
+
+}
+
+@keyframes titulo-capa{
+0% {opacity: 0; transform:translate(0px, -20px)}
+100% {opacity: 1; transform:( 0px, 0px)}
+}
+
+@keyframes navegacao{
+0% {opacity: 0;}
+50%{opacity: 0;}
+100% {opacity:1;}
+}
+
+@keyframes conteudo{
+0% {opacity: 0; transform:translate(-20px, 0px)}
+100% {opacity: 1; transform:( 0px, 0px)}
+}
+
+/*RESPOSIVO*/
+
+@media (max-width: 1000px) {
+
+	.navigation li{
+		display:none;
+
+	}
+
+	.navigation li.threeline-icon{
+		display: inline-block;
+	}
+
+
+	.navigation li.threeline-icon:hover {
+		cursor: pointer;
+	}
+
+	.profile-pic{
+	width: 100%;
+	
+
+	}
+		
+	.capa div{
+		display: block;
+		height: auto;
+
+	}
+	.profile-pic img{
+	margin-top: 7px;
+	max-width: 80%;
+
+	}
+	.profile-title{
+		text-align: center;
+		width: 100%;
+		
+	}
+	
+	.profile-title h1{
+	margin-top: 30px;
+	font-size: 60px;
+	
+
+	}
+
+	.profile-title h2{
+		margin-left: 20px;
+		margin-right: 20px;
+
+	}
+
+	/*CURRICULO RESPONSIVO*/
+
+	.main {
+
+	padding: 10px 5% 40px 5%;
+
+
+}
+	.main p{
+		text-align: justify;
+		line-height: 20px;
+
+	}
+
+	.caminho li{
+		font-size: 14px;
+	}
+
+	.cv-pic{
+		float: none;
+		max-width: 100%;
+		margin-right: 0px;
+
+
+
+	}
+
+	.miniatura{
+		max-width: 100%;
+		background-size: auto 100%;
+
+	}
+
+	.blackbox{
+		opacity: 0.8;
+
+	}
+
+	/*MENU RESPONSIVO*/
+
+	.menujs{
+	height: auto;
+
+
+	}
+
+	.menujs ul{
+	height: auto;
+	text-align: center;
+	padding-right: 15%;
+	padding-left: 15%;
+
+
+	}
+
+	.menujs li{
+	display: block;
+	border-bottom: 1px solid white;
+	width: 100%;
+	padding: 0;
+
+
+	}
+
+
+
+
+}
